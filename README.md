@@ -6,7 +6,7 @@ Play geography trivia quizzes in your web browser.  In early development.
 Installation
 ------------
 
-Use (`stack`)[http://haskellstack.org].
+Use [`stack`](http://haskellstack.org).
 
 Use
 ---
@@ -21,5 +21,5 @@ a populated database (work in progress).
 Authors
 -------
 
-(Vera te Velde)[mailto:vtevelde@gmail.com]
-(Matt Peddie)[mailto:mpeddie@gmail.com]
+[Vera te Velde](mailto:vtevelde@gmail.com)
+[Matt Peddie](mailto:mpeddie@gmail.com)
