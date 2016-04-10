@@ -1,0 +1,8 @@
+resolver: lts-5.11
+extra-deps: [servant-0.6.1, servant-server-0.6.1]
+
+# packages:
+# - '../servant-ekg'
+# - location:
+#     git: https://github.com/anchor/servant-ekg
+#     commit: e2629d7434e475d315ed5c19dfcf88754d4101c8

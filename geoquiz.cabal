@@ -1,0 +1,49 @@
+name:                geoquiz
+version:             0.1.0.0
+synopsis:            Geography quizzes
+description:         See the 'README.md' file
+homepage:            https://github.com/peddie/geoquiz
+license:             BSD3
+license-file:        LICENSE
+author:              Matthew Peddie
+maintainer:          mpeddie@gmail.com
+copyright:           (c) 2016 Matthew Peddie
+category:            Game
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+source-repository head
+  type: git
+  location: https://github.com/peddie/geoquiz
+
+executable geoquiz
+  main-is:             Main.hs
+  other-modules:       Config
+                     , Database.Models
+                     , Network.Api
+                     , Puzzle.Puzzle
+                     , Puzzle.Generate
+  build-depends:       base >=4.8 && <4.9
+                     , bytestring
+                     , text
+                     , servant >= 0.6
+                     , aeson >= 0.9
+                     , http-api-data
+                     , semigroups
+                     , persistent-postgresql
+                     , persistent
+                     , persistent-template
+                     , esqueleto
+                     , servant-server
+                     , transformers
+                     , mtl
+                     , either
+                     , monad-logger
+                     , warp
+                     , wai
+                     , wai-extra
+--                     , servant-ekg  -- TODO(MP)
+  hs-source-dirs:      src, app
+  ghc-options:         -rtsopts -threaded
+  default-language:    Haskell2010
